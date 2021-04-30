@@ -1,20 +1,6 @@
 const fs = require("fs");
 const genMarkD = require("./utils/generateMarkdown.js");
 const inquirer = require("inquirer");
-const testResp = {
-    title: "README Generator",
-    description1: "school",
-    description2: "school",
-    description3: "a mundane one",
-    description4: "inquirer",
-    installation: "HAve node js installed",
-    Features: "okay,this,is,a,test",
-    acknowledgements: "no,i,will,not",
-    dependencies: "npm i",
-    licence: "ESC",
-    contributions: "THEY CANNOT ",
-};
-
 validateInput = (input) => {
     // input ? true : "dont leave me blank :(";
     if (input) {
@@ -25,7 +11,7 @@ validateInput = (input) => {
 
 const questionArray = [
     {
-        message: "Enter the Title of Your Project",
+        message: "Enter the Title of Your Project:",
         name: "title",
         type: "input",
         validate: validateInput,
@@ -55,13 +41,13 @@ const questionArray = [
         validate: validateInput,
     },
     {
-        message: "What are the steps to install your project",
+        message: "What are the steps to install your project?",
         name: "installation",
         type: "input",
         validate: validateInput,
     },
     {
-        message: "List your Features (seperate each feature with a comma)",
+        message: "List your Features (seperate each feature with a comma):",
         name: "features",
         type: "input",
         validate: validateInput,
@@ -76,13 +62,7 @@ const questionArray = [
     {
         message: "What licence does the project have?",
         name: "licence",
-        choices: [
-            "MIT",
-            "Apache 2.0",
-            "ISC",
-            "Academic Free Licence 3.0",
-            "None",
-        ],
+        choices: ["MIT", "Apache 2.0", "ISC", "None"],
         type: "list",
         validate: validateInput,
     },
@@ -95,21 +75,16 @@ const questionArray = [
 ];
 
 function askQuestions(questions) {
-    console.log("question asked \nvvvvvvvvvv");
-
     inquirer.prompt(questions).then((answers) => {
         writeToFile("createdREADME.md", answers);
     });
 }
 
-// TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, genMarkD.generateMarkdown(data), (err) => {
         err ? console.log(err) : console.log("generating readme");
     });
-    // data is the respoinse obj
 }
-// TODO: Create a function to initialize app
 function init() {
     askQuestions(questionArray);
 }

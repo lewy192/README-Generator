@@ -1,73 +1,80 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(licence) {
-    licence ? `![${licence}](${renderLicenseLink(licence)})` : "";
-}
-
-// TODO: Create a function that returns the licence link
-// If there is no licence, return an empty string
 function renderLicenseLink(licence) {
     if (licence === "None") return "";
     else if (licence === "ISC")
-        return "https://img.shields.io/badge/License-ISC-blue.svg";
+        return "https://img.shields.io/badge/License-ISC-green.svg";
     else if (licence === "MIT")
         return "https://img.shields.io/badge/License-MIT-green.svg";
     else if (licence === "Apache 2.0")
-        return "https://img.shields.io/badge/License-Apache%202.0-blue.svg";
+        return "https://img.shields.io/badge/License-Apache%202.0-green.svg";
 }
 
-// TODO: Create a function that returns the licence section of README
-// If there is no licence, return an empty string
 function renderLicenseSection(licence) {
-    return `## Licence
-            ${renderLicenseBadge(licence.licence)}`;
+    return `## Licence\n![${licence}](${renderLicenseLink(licence)})`;
 }
 
 fullstopCheck = (string) => {
-    if (!string[string.length - 1] === ".") return ".";
+    string = string.trim();
+    if (!(string[string.length - 1] === ".")) return ".";
+    return " ";
 };
 
 featureList = (features) => {
     let featureArray = features.split(",");
     let formatedFeatures = "";
     for (let feature of featureArray) {
-        formatedFeatures += `- ${feature}\n`;
+        formatedFeatures += `- ${feature}${fullstopCheck(feature)}\n`;
     }
 
     return formatedFeatures;
 };
 console.log(featureList("a,b,s,d,x"));
 
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+    console.log(fullstopCheck(data.description1));
     return `# ${data.title} 
 ${renderLicenseSection(data.licence)}
 
 ## Description 
-My motivation for this project was: ${
-        data.description1 + fullstopCheck(data.description1)
-    }
-I built this project because ${
-        data.description2 + fullstopCheck(data.description2)
-    }
-This project solves the following problem ${
-        data.description3 + fullstopCheck(data.description3)
-    }
-From this project I learnt ${
-        data.description4 + fullstopCheck(data.description4)
-    }
+
+\nMy motivation for this project was: ${data.description1}${fullstopCheck(
+        data.description1
+    )}
+    
+\nI built this project because ${data.description2}${fullstopCheck(
+        data.description2
+    )}
+    
+\nThis project solves the following problem ${data.description3}${fullstopCheck(
+        data.description3
+    )}
+    
+\nFrom this project I learnt ${data.description4}${fullstopCheck(
+        data.description4
+    )}
+
+## Contents
+
+- [Installation](#installation)
+- [Licence](#licence)
+- [Features](#features)
+- [Contributions](#contributions)
+    
 
 ## Installation
-To install this project ${data.installation}
+
+To install this project ${data.installation}${fullstopCheck(data.installation)}
 
 ## Features
+
 ${featureList(data.features)}
 
 ## Dependencies 
-To install dependencies run:\n \`\`\`${data.dependencies}\`\`\`.
+
+To install dependencies run:\n \`\`\`${data.dependencies}\`\`\`
 
 ## Contributions 
-${data.contributions}
+
+${data.contributions}${fullstopCheck(data.contributions)}
 
 `;
 }

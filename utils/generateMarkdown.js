@@ -27,7 +27,7 @@ featureList = (features) => {
 
     return formatedFeatures;
 };
-console.log(featureList("a,b,s,d,x"));
+// console.log(featureList("a,b,s,d,x"));
 
 function generateMarkdown(data) {
     console.log(fullstopCheck(data.description1));
@@ -76,6 +76,10 @@ To install dependencies run:\n \`\`\`${data.dependencies}\`\`\`
 
 ${data.contributions}${fullstopCheck(data.contributions)}
 
+##Acknowledgements
+
+-   [w3schools](https://www.w3schools.com/)
+-   [StackOverflow](https://stackoverflow.com/)
 `;
 }
 

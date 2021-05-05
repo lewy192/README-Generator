@@ -14,6 +14,10 @@ This project solves the following problem Spending time on writing the basics th
 
 From this project I learnt That automation projects are exceptionally handy.... that's why computers were made after all....
 
+## Video
+
+[Example video](https://youtu.be/LNgz0QsaTVw)
+
 ## Contents
 
 -   [Installation](#installation)

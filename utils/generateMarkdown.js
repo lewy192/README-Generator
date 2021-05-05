@@ -58,7 +58,7 @@ ${renderLicenseSection(data.licence)}
 - [Licence](#licence)
 - [Features](#features)
 - [Contributions](#contributions)
-    
+- [Questions](#questions)    
 
 ## Installation
 
@@ -72,11 +72,19 @@ ${featureList(data.features)}
 
 To install dependencies run:\n \`\`\`${data.dependencies}\`\`\`
 
+## Testing
+
+To run tests use the command:\n \`\`\`${data.tests}\`\`\`
+
 ## Contributions 
 
 ${data.contributions}${fullstopCheck(data.contributions)}
 
-##Acknowledgements
+## Questions
+- Contact me via [GitHub](https://github.com/${data.questionGithub})
+- Contact me via [Email](mailto:${data.questionEmail})
+
+## Acknowledgements
 
 -   [w3schools](https://www.w3schools.com/)
 -   [StackOverflow](https://stackoverflow.com/)

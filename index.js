@@ -60,12 +60,31 @@ const questionArray = [
         validate: validateInput,
     },
     {
+        message: "What command should the user enter to run tests?",
+        name: "tests",
+        type: "input",
+        validate: validateInput,
+    },
+    {
         message: "What licence does the project have?",
         name: "licence",
         choices: ["MIT", "Apache 2.0", "ISC", "None"],
         type: "list",
         validate: validateInput,
     },
+    {
+        message: "Enter an email for people to contact you:",
+        name: "questionEmail",
+        type: "input",
+        validate: validateInput,
+    },
+    {
+        message: "Enter your GitHub username for people to contact you:",
+        name: "questionGithub",
+        type: "input",
+        validate: validateInput,
+    },
+
     {
         message: "How can people contribute?",
         name: "contributions",

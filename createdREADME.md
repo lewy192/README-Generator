@@ -1,42 +1,57 @@
-# READEME Generator
-
+# testing 
 ## Licence
-
 ![MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
-## Description
+## Description 
 
-My motivation for this project was: To maximise efficiency when creating projects.
 
-I built this project because It allows me to have a solid readme template without typing all the syntax for the md file.
+My motivation for this project was: testing.
+    
 
-This project solves the following problem Spending time on writing the basics that every README should contain.
+I built this project because testing.
+    
 
-From this project I learnt That automation projects are exceptionally handy.... that's why computers were made after all....
+This project solves the following problem testing.
+    
+
+From this project I learnt testing.
 
 ## Contents
 
--   [Installation](#installation)
--   [Licence](#licence)
--   [Features](#features)
--   [Contributions](#contributions)
+- [Installation](#installation)
+- [Licence](#licence)
+- [Features](#features)
+- [Contributions](#contributions)
+- [Questions](#questions)    
 
 ## Installation
 
-To install this project As you are reading this, you're already in my repo so just download the code, install node js and voila.
+To install this project testing.
 
 ## Features
 
--   CLI prompt questions.
--   README template generated based on answers.
--   Saves a chunk of time.
--   This README was created by the app this readme is made for... READMEception
+- testing.
 
-## Dependencies
+
+## Dependencies 
 
 To install dependencies run:
-`npm install`
+ ```testing```
 
-## Contributions
+## Testing
 
-No contributions are being accepted at this time. :).
+To run tests use the command:
+ ```npm run test```
+
+## Contributions 
+
+no.
+
+## Questions
+- Contact me via [GitHub](https://github.com/lewy192)
+- Contact me via [Email](mailto:lewis.james.hill@outlook.com)
+
+##Acknowledgements
+
+-   [w3schools](https://www.w3schools.com/)
+-   [StackOverflow](https://stackoverflow.com/)

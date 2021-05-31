@@ -27,7 +27,9 @@ From this project I learnt That automation projects are exceptionally handy.... 
 
 ## Installation
 
-To install this project As you are reading this, you're already in my repo so just download the code, install node js and voila.
+To install this project: 
+As you are reading this, you're already in my repo so just download the code, install node js, open the folder in vs code and type in terminal
+`node index.js`
 
 ## Features
 

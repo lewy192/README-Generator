@@ -72,18 +72,6 @@ const questionArray = [
         type: "list",
         validate: validateInput,
     },
-    {
-        message: "Enter an email for people to contact you:",
-        name: "questionEmail",
-        type: "input",
-        validate: validateInput,
-    },
-    {
-        message: "Enter your GitHub username for people to contact you:",
-        name: "questionGithub",
-        type: "input",
-        validate: validateInput,
-    },
 
     {
         message: "How can people contribute?",

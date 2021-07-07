@@ -1,20 +1,20 @@
-# Team Profile Generator 
+# E-Commerce Backend 
 ## Licence
 ![MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
 ## Description 
 
 
-My motivation for this project was: As a manager i want to be able to construct a visual representation of my team. 
+My motivation for this project was: The gowth of E-Commerce over the past decade has been exponential with 2020 further emphasising its role in todays society. As a developer I want to ensure I am up to date with all the latest areas whgere clients could emerge from. Therefore building and practicing E-commerce backend was crucial to me. 
     
 
-I built this project because It allows me to have a styled html page of my team built for me based on my CLI inputs.
+I built this project because k.
     
 
-This project solves the following problem Having to manually create the aforementioned page. 
+This project solves the following problem k.
     
 
-From this project I learnt I shouldn't try to assign instance properties asynchronously. 
+From this project I learnt Learnt about how important ORM's are in the backend development of an E-Commerce platform.
 
 ## Contents
 
@@ -26,29 +26,30 @@ From this project I learnt I shouldn't try to assign instance properties asynchr
 
 ## Installation
 
-To install this project Go to my github and download the code.
+To install this project Clone the repo.
 
 ## Features
 
-- Node js.
-- Styled Html generated based of CLI inputs. 
-- Saves time for managers.
-- Team visualiser.
+- ORM.
+-  MySQL.
+-  Sequelize.
+-  express.
+-  Node.
 
 
 ## Dependencies 
 
 To install dependencies run:
- ```npm install```
+ ```npm i```
 
 ## Testing
 
 To run tests use the command:
- ```npm run tests```
+ ```n/a```
 
 ## Contributions 
 
-I am not accepting any contributions at this moment in time :). 
+no contributions at this moment.
 
 ## Questions
 - Contact me via [GitHub](https://github.com/lewy192)

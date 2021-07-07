@@ -81,8 +81,8 @@ To run tests use the command:\n \`\`\`${data.tests}\`\`\`
 ${data.contributions}${fullstopCheck(data.contributions)}
 
 ## Questions
-- Contact me via [GitHub](https://github.com/${data.questionGithub})
-- Contact me via [Email](mailto:${data.questionEmail})
+- Contact me via [GitHub](https://github.com/lewy192)
+- Contact me via [Email](mailto:lewis.james.hill@outlook.com)
 
 ## Acknowledgements
 

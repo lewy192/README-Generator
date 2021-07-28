@@ -1,4 +1,4 @@
-# READEME Generator
+# READEME Generator (CLI)
 
 ## Licence
 
